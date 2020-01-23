@@ -1,0 +1,30 @@
+<html>
+
+<head>
+</head>
+
+<body>
+  <input id="firstInp" type="text"></input>
+  <input id="secondInp" type="text"></input>
+  <br>
+  <button onclick="check()">check</button>
+  <br>
+  <div id="demo"></div>
+  <script>
+    var firstInput = document.getElementById('firstInp')[0].value;
+    var secondInput = document.getElementById('secondInp')[1].value;
+    var result;
+
+    function check(firstInput, secondInput) {
+      if (firstInput + secondInput == 50 || firstInput == 50 || secondInput == 50) {
+        return result = true;
+        document.body.innerHTML += "true";
+      } else {
+        return result = false;
+        document.body.innerHTML += "false";
+      }
+    }
+  </script>
+</body>
+
+</html>
